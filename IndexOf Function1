@@ -1,0 +1,39 @@
+function mutation(arr) {
+
+  var a = arr.splice('');
+  var b = a[0].split('');
+  
+  var sorted = [];
+  
+  for (var i = 0; i < b.length; i++) {
+    sorted.push(b[i].toLowerCase());
+}
+  
+  
+  var c = a[1].split('');
+  
+  var sorted2 = [];
+  
+  for (var j=0; j<c.length; j++) {
+    sorted2.push(c[j].toLowerCase());
+  }
+    
+  var d = sorted2[0];
+  var e = sorted2[1];
+  var f = sorted2[2];
+  var g = sorted2[3];
+  var h = sorted2[4];
+
+  
+  if (sorted2.length == 3 && sorted.indexOf(d) != -1 && sorted.indexOf(e) != -1 && sorted.indexOf(f) != -1 || sorted2.length == 4 && sorted.indexOf(d) != -1 && sorted.indexOf(e) != -1 && sorted.indexOf(f) != -1 || sorted2.length == 5 && sorted.indexOf(d) != -1 && sorted.indexOf(e) != -1 && sorted.indexOf(f) != -1 & sorted.indexOf(g) != -1 && sorted.indexOf(h) != -1) {
+    return true;
+  } else {
+    return false;
+  }
+  
+ 
+}
+ 
+
+mutation(["hello", "hey"]);
+
